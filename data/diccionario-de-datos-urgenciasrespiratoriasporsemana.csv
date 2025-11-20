@@ -1,0 +1,70 @@
+Diccionario de datos  - Urgencias respiratorias por semana estadística;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+Nombre del Campo;Tipo de Dato;Nro. de caracteres; Valores;Detalle
+EstablecimientoCodigo;Numérico;6;Numérico;"Corresponde a un identificador  único, que permite reconocer al prestador   en forma unívoca e inequívoca. Hasta el 2013 era significativo
+(Los 2 primeros dígitos identifican al Servicio de Salud, los 3 dígitos siguientes al guion son correlativos dentro de la categoría a que pertenecen) Desde el 2014 no es significativo (los 3 dígitos siguientes al guion son correlativos  y comienzan con el valor 9)"
+EstablecimientoGlosa;Texto;250;Texto Libre;Es la denominación nominal  del establecimiento, que lo reconoce de otros. Es sancionada con la respectiva resolución de Autorización Sanitaria. 
+RegionCodigo;Texto;2;Tabla Maestra de la DPA;"Corresponde al código que se le otorga a la región, a través de la división político administrativa.
+https://deis.minsal.cl/VocabularioNorma820.xlsx"
+RegionGlosa;Texto;100;Tabla Maestra de la DPA;"Es la unidad político – administrativa de mayor nivel en que está dividido el país. La división político administrativa que actualmente rige en el país, se originó en 1974 y ha sido objeto de sucesivas modificaciones, la última de las cuales fue la Ley N° 21.033, que creó la Región de Ñuble. Por ello, a partir del 4 de septiembre de 2018, el país está dividido en 16 regiones.
+https://deis.minsal.cl/VocabularioNorma820.xlsx"
+ComunaCodigo;Texto;5;"Lista de códigos de comuna. 
+https://deis.minsal.cl/VocabularioNorma820.xlsx";Es el código que se le asigna a una comuna, determinado por la división político administrativa
+ComunaGlosa;Texto;100;"Lista de códigos de comuna.
+https://deis.minsal.cl/VocabularioNorma820.xlsx";Es la unidad político-administrativa en que están divididas las provincias, la que corresponde a la división de menor nivel en la administración del Estado. 
+ServicioSaludCodigo;Numérico;2;Tabla Maestra de Servicios de Salud Y SEREMIs;Es un identificador único para el Servicio de Salud.
+ServicioSaludGlosa;Texto;50;"Tabla Maestra de Servicios de Salud
+Tabla Maestra de Secretarias Regionales Ministeriales";Corresponde a la dependencia que tiene el establecimiento sobre el servicios de Salud.
+TipoEstablecimiento;Texto;50;"Tabla Maestra Id Tipo de Establecimiento   https://deis.minsal.cl/VocabularioNorma820.xlsx
+";Clasifica los establecimientos de acuerdo a su cartera de prestaciones establecidas en la Resolución Sanitaria
+DependenciaAdministrativa;100;"- Servicio de Salud
+- Municipal
+- Corporaciones Municipal
+- Organizaciones no Gubernamentales (ONG)
+-   Privado
+-  Fuerzas Armadas de orden y seguridad (FFAA)
+- Gendarmeria
+- Ministerio de Justicia
+- Ministerio de Trabajo y Previsión Social
+- MINSAL
+- Otra Institución 
+-   Delegados 
+- SEREMI de Salud";Se refiere a la institución que, fundamentalmente es responsable de la administración del establecimiento, ya sea en forma directa o bien fijando las normas a las cuales deben sujetarse los establecimientos para administrar su patrimonio.  Los establecimientos de salud privados que hayan suscrito convenios regidos por las disposiciones del Decreto con Fuerza de Ley 36 (...) Hay seis recintos privados en la condición anterior. A través del convenio DFL 36, estos establecimientos atienden a población del sector público, reemplazando la labor que podrían hacer recintos estatales y recibiendo recursos fiscales para ello. ;SI
+NivelAtencion;Texto;20;"Primario
+Secundario
+Terciario
+Mas de Un nivel
+No Aplica";El sistema de salud está organizado en niveles de atención, según la cobertura y complejidad de las atenciones que entrega. 
+TipoUrgencia;Texto;10;"-Ambulatoria (SAPU)
+-Ambulatoria (SAR)
+-Ambulatoria (SUR)
+-Ambulatoria (CEAR)
+-Urgencia Ambulatoria Privada
+-Urgencia Ambulatoria Especializada
+-Urgencia Hospitalaria Especializada
+-Hospitalaria  (UEH)
+-No Aplica
+-Pendiente";Es dato que especifica el tipo de servicio de urgencia en la Red Asistencial.
+Latitud;Decimal;;;La latitud es la distancia angular entre la línea del Ecuador y un punto determinado de la Tierra, medida a lo largo del meridiano en el que se encuentra dicho punto. Según el hemisferio en el que se sitúe el punto, puede ser latitud norte o sur.
+Longitud;Decimal;;;La longitud es una medida que expresa la distancia angular entre un punto dado de la superficie terrestre y el meridiano que se toma como origen (denominado meridiano de base), medida a lo largo del paralelo en el que se encuentra dicho punto
+NivelComplejidad;Texto ;30;"- Alta Complejidad
+- Mediana Complejidad
+- Baja Complejidad
+-No Aplica
+-Pendiente
+";"La complejidad depende de la actividad de una unidad asistencial, en término del número de  procedimiento complejos, grado de desarrollo alcanzado por la misma,  disponibilidad de recurso humano y grado de especialización, equipamiento y horario de atención.
+
+"
+Anio;Numérico;;Numérico;Año al cual corresponden los datos
+SemanaEstadistica;Numérico;;Numérico;Semana estadística a la que corresponde los datos
+OrdenCausa;Numérico;;Numérico;Orden que le da el sistema de información a las causas de urgencias .
+Causa;Texto ;100;;Lista de causas de consultas de urgencias.
+NumTotal;Numérico;;Numérico;Número total de urgencias por semana.
+NumMenor1Anio;Numérico;;Numérico;Número total de pacientes atendidos menores de un año  
+Num1a4Anios;Numérico;;Numérico;Número total de pacientes atendidos entre uno y cuatro años
+Num5a14Anios;Numérico;;Numérico;Número total de pacientes atendidos entre cinco y catorce años
+Num15a64Anios;Numérico;;Numérico;Número total de pacientes atendidos entre quince y sesenta y cuatro años
+Num65oMas;Numérico;;Numérico;Número total de pacientes atendidos mayores o igual a sesenta y cinco años
