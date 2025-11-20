@@ -188,4 +188,4 @@ Autores principales
 
 - Fabián Araya
 - Felipe Venegas
-- Seba
+- Sebastián Ohberg
